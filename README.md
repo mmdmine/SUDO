@@ -22,13 +22,22 @@ you need to let your anger out somehow. A typical usage looks like this:
 	bash: /bar: Is a directory
 	$ :)
 
-## Installation
+## Installation on Bash
 
 Run `install.py`, follow instructions (requires Python 3). Running this script will also allow you to update to new versions.
 
 Note: this will append to your `~/.bashrc`. A backup of your `~/.bashrc` is kept at `~/.bashrc.old` if anything goes catastrophically wrong.
 
 Warning: never run scripts without checking them and being certain that they are not malicious.
+
+## Installation on Fish
+
+Run `install.fish`.
+
+for update aliases to add alias for newly installed programs, just run `SUDO_update` from your shell.
+
+to remove all installed aliases, just run `SUDO_remove`. it won't be able to detect aliases of uninstalled programs,
+so you need to remove them by hand.
 
 ## Acknowledgements
 
